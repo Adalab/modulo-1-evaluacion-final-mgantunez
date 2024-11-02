@@ -42,45 +42,65 @@
     background-position-x: center;
 
 
-    &__content {}
+    &__content {
+        padding: 20px;
+    }
 
     &__title {
-        align-items: center;
-        font-size: 42px;
+        font-size: 2.625rem;
+        overflow-wrap: break-word;
+        margin-bottom: 20px;
     }
 
     &__container-button {
         background-color: white;
         border-radius: 50%;
-        border: none;
+        border: none; 
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 35px;
     }
-
-    &__button {}
-
 }
 
 .section1 {
-
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin: 20px;
+   
+  
     &__above-title {
         color: #8ccbea;
+        margin-top: 40px;
+        margin-bottom: 5px;
     }
 
     &__title {
         font-family: Roboto Slab, serif;
+        margin-bottom: 20px;
     }
 
     &__paragraph {
-        color: #4a4a4a
+        color: #4a4a4a;
+        font-size: 1.125rem;
+    }
+
+    &__container-button {
+        width: auto;
+        margin-bottom: 40px;
     }
 
     &__button {
+        display: inline-block;
         color: #f26002;
         font-weight: bold;
         background-color: white;
         border-radius: 20px;
         padding: 10px 25px;
-        font-size: 20px;
+        font-size: 1.25rem;
         border: solid 2px #f26002;
+        margin-top: 40px;
 
     }
 }
@@ -91,18 +111,16 @@
     background-color: #eff9ff;
     text-align: center;
 
-    &__title {
-        font-family: Roboto Slab, serif;
-        margin-bottom: 49px;
-    }
-
     &__container {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr auto;
+        grid-template-rows: 1 fr 1fr 1fr 1fr auto;
         gap: 40px;
     }
 
-    &__article {}
+    &__title {
+        font-family: Roboto Slab, serif;
+        margin-top: 30px;
+    }
 
     &__article__title {
         font-family: Roboto Slab, serif;
@@ -117,14 +135,13 @@
         width: auto;
         display: inline-block;
         color: white;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: bold;
         background-color: #f26002;
         border: none;
         border-radius: 20px;
         padding: 10px 25px;
         margin-bottom: 40px;
-
     }
 }
 
@@ -146,7 +163,6 @@
 
     &__arrow {
         margin: 10px;
-
     }
 
     &__nav {
@@ -161,6 +177,9 @@
         margin-bottom: 40px;
     }
 
+    &__menu-item {
+        margin-bottom: 15px;
+    }
     &__menu-link {
         color: white;
         text-decoration: none;
@@ -168,6 +187,13 @@
 
     &__copyright {
         margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__copyright-item {
+        margin-bottom: 15px;
     }
 
 }
