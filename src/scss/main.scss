@@ -11,30 +11,36 @@
 }
 
 .header {
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0271bc;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
     position: relative;
     height: 100vh;
 
     color: white;
-    font-family: Roboto Slab, serif;
+    font-family: Roboto Slab,
+    serif;
 
     background-image: url("../images/cover.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
 
-    &__menu-hamburger {
-        background-color: #0271bc;
-        width: 38px;
-        height: 22px;
-        position: sticky;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        margin: 2px;
-    }
 
     &__content {}
 
@@ -49,9 +55,7 @@
         border: none;
     }
 
-    &__button {
-   
-    }
+    &__button {}
 
 }
 
@@ -161,7 +165,7 @@
         color: white;
         text-decoration: none;
     }
-    
+
     &__copyright {
         margin-bottom: 50px;
     }
