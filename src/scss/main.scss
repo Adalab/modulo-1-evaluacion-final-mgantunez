@@ -43,9 +43,14 @@
         font-size: 42px;
     }
 
-    &__button {
+    &__container-button {
+        background-color: white;
         border-radius: 50%;
-        color: white;
+        border: none;
+    }
+
+    &__button {
+   
     }
 
 }
@@ -85,8 +90,6 @@
     &__title {
         font-family: Roboto Slab, serif;
         margin-bottom: 49px;
-
-
     }
 
     &__container {
@@ -95,15 +98,20 @@
         gap: 40px;
     }
 
-    &__article {
-
-    }
+    &__article {}
 
     &__article__title {
         font-family: Roboto Slab, serif;
     }
 
+    &__button-container {
+        display: flex;
+        justify-content: center;
+    }
+
     &__button {
+        width: auto;
+        display: inline-block;
         color: white;
         font-size: 20px;
         font-weight: bold;
@@ -111,7 +119,8 @@
         border: none;
         border-radius: 20px;
         padding: 10px 25px;
-        
+        margin-bottom: 40px;
+
     }
 }
 
@@ -119,18 +128,42 @@
     /*esto tiene que ir con flexbox*/
     color: white;
     background-color: #304268;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__container-arrow {
+        background-color: white;
+        border-radius: 50%;
+        transform: translateY(-20px)
+    }
+
+    &__arrow {
+        margin: 10px;
+
+    }
 
     &__nav {
         display: flex;
         flex-direction: column;
+        margin: 10px;
     }
 
     &__list {
         list-style: none;
+        margin-top: 25px;
+        margin-bottom: 40px;
     }
 
-    .menu__link {
+    &__menu-link {
         color: white;
         text-decoration: none;
     }
+    
+    &__copyright {
+        margin-bottom: 50px;
+    }
+
 }
