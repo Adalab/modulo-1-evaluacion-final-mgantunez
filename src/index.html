@@ -25,13 +25,17 @@
 <body>
   <header class="header">
     <div>
-      <img class="header__menu" src="./images/ico-menu.svg" alt="Menu hamburguesa">
+      <a href="https://adalab.es">
+        <img class="header__menu-hamburger" src="./images/ico-menu.svg" alt="Menu hamburguesa">
+      </a>
     </div>
-    <h1 class="header__title">ANONYMOUS PROXY</h1>
-    <p>In hac habitasse platea dictumst.</p>
-    <button class="header__button">
-      <img src="../images/ico-scroll-down.svg" alt="Flecha abajo">
-    </button>
+    <div class="header__content">
+      <h1 class="header__title">ANONYMOUS PROXY</h1>
+      <p>In hac habitasse platea dictumst.</p>
+      <button class="header__button">
+        <img src="../images/ico-scroll-down.svg" alt="Flecha abajo">
+      </button>
+    </div>
   </header>
 
   <main>
@@ -39,7 +43,8 @@
       <p class="section1__above-title">Insomnia Tips</p>
       <h2 class="section1__title">Looking Through A Window</h2>
 
-      <p>Donec accumsan, nulla ut volutpat porttitot, quam odio tempus feliz, at luctus ex diam nec lectus. Vivamus
+      <p class=section1__paragraph>Donec accumsan, nulla ut volutpat porttitot, quam odio tempus feliz, at luctus ex
+        diam nec lectus. Vivamus
         semper sodales rutrum.</p>
 
       <button class="section1__button">Go</button>
@@ -50,24 +55,27 @@
 
       <h2 class=section2__title>3 Reasons To Purchase</h2>
 
-      <article class="section2__article">
-        <h3 class="section2__article__title">Ut sed metus</h3>
-        <p> Lorem ipsum dolor sit amet, consecteur.</p>
-      </article>
+      <div class="section2__container">
+        <article class="section2__article">
+          <h3 class="section2__article__title">Ut sed metus</h3>
+          <p> Lorem ipsum dolor sit amet, consecteur.</p>
+        </article>
 
-      <article class="section2__article">
-        <h3 class="section2__article__title">Curabitur ac erat</h3>
-        <p>Mauris mattis urna quis lorem molestie.</p>
-      </article>
+        <article class="section2__article">
+          <h3 class="section2__article__title">Curabitur ac erat</h3>
+          <p>Mauris mattis urna quis lorem molestie.</p>
+        </article>
 
-      <article class="section2__article">
-        <h3 class="section2__article__title">Morbi dictumst</h3>
-        <p>Aliquam in dolor et dolor tincidunt.</p>
-      </article>
+        <article class="section2__article">
+          <h3 class="section2__article__title">Morbi dictumst</h3>
+          <p>Aliquam in dolor et dolor tincidunt.</p>
+        </article>
 
-      <button class="section2__button">More Reasons</button>
+        <button class="section2__button">More Reasons</button>
+
+      </div>
+
     </section>
-
   </main>
 
   <footer class="footer">

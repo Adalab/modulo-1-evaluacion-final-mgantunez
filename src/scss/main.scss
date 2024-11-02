@@ -12,22 +12,36 @@
 
 .header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+
     color: white;
-    background-image: url("../images/cover.jpeg");
-    background-repeat: no-repeat;
-    justify-content: center;
     font-family: Roboto Slab, serif;
 
-    &__menu {
+    background-image: url("../images/cover.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    &__menu-hamburger {
         background-color: #0271bc;
         width: 38px;
         height: 22px;
         position: sticky;
         top: 0;
+        left: 0;
+        z-index: 10;
+        margin: 2px;
     }
 
+    &__content {}
 
-    &__title {}
+    &__title {
+        align-items: center;
+        font-size: 42px;
+    }
 
     &__button {
         border-radius: 50%;
@@ -46,28 +60,44 @@
         font-family: Roboto Slab, serif;
     }
 
+    &__paragraph {
+        color: #4a4a4a
+    }
+
     &__button {
         color: #f26002;
         font-weight: bold;
         background-color: white;
-        border-radius: 25%;
+        border-radius: 20px;
+        padding: 10px 25px;
+        font-size: 20px;
         border: solid 2px #f26002;
-        padding: 20px 40px 20px 40px;
 
     }
 }
 
 .section2 {
+    /*esto tiene que ir con grid*/
 
     background-color: #eff9ff;
+    text-align: center;
 
     &__title {
-
         font-family: Roboto Slab, serif;
+        margin-bottom: 49px;
+
 
     }
 
-    &__article {}
+    &__container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr auto;
+        gap: 40px;
+    }
+
+    &__article {
+
+    }
 
     &__article__title {
         font-family: Roboto Slab, serif;
@@ -75,15 +105,18 @@
 
     &__button {
         color: white;
+        font-size: 20px;
         font-weight: bold;
         background-color: #f26002;
-        border-radius: 25%;
-        border: solid 2px #f26002;
-        padding: 20px 40px 20px 40px;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 25px;
+        
     }
 }
 
 .footer {
+    /*esto tiene que ir con flexbox*/
     color: white;
     background-color: #304268;
 
