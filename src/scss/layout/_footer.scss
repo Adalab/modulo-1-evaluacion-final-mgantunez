@@ -9,16 +9,14 @@
     text-align: center;
     position: relative;
 
-    /* Tablet */
-    @media (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
         display: flex;
         flex-direction: row-reverse;
         align-items: first baseline;
         column-gap: 70px;
     }
 
-    /* Desktop*/
-    @media (min-width: 1280px) {
+    @include desktop {
         display: flex;
         flex-direction: row-reverse;
         align-items: first baseline;
@@ -46,8 +44,7 @@
         flex-direction: column;
         margin-top: 60px;
 
-        /* Tablet */
-        @media (min-width: 768px) and (max-width: 1279px) {
+        @include tablet {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -55,8 +52,7 @@
             column-gap: 150px;
         }
 
-        /* Desktop*/
-        @media (min-width: 1280px) {
+        @include desktop {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -69,13 +65,11 @@
         list-style: none;
         margin-bottom: 30px;
 
-        /* Tablet */
-        @media (min-width: 768px) and (max-width: 1279px) {
+        @include tablet {
             text-align: left;
         }
 
-        /* Desktop*/
-        @media (min-width: 1280px) {
+        @include desktop {
             text-align: left;
         }
     }
@@ -96,16 +90,14 @@
         flex-direction: column;
         align-items: center;
 
-        /* Tablet */
-        @media (min-width: 768px) and (max-width: 1279px) {
+        @include tablet {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             margin-right: 100px;
         }
 
-        /* Desktop*/
-        @media (min-width: 1280px) {
+        @include desktop {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
