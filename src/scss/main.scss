@@ -56,7 +56,7 @@
         margin-bottom: 20px;
     }
 
-    &__container-button {
+    &__button {
         background-color: white;
         border-radius: 50%;
         border: none;
@@ -94,7 +94,7 @@
         font-size: 1.125rem;
     }
 
-    &__container-button {
+    &__button--container {
         width: auto;
         margin-bottom: 40px;
     }
@@ -170,7 +170,7 @@
 
     /*hacer transform con transition*/
 
-    &__button-container {
+    &__button--container {
         display: flex;
         justify-content: center;
         margin-bottom: 60px;
@@ -210,7 +210,7 @@
     text-align: center;
     position: relative;
 
-    &__container-arrow {
+    &__arrow--container {
         background-color: white;
         border-radius: 50%;
         border: none;
@@ -233,16 +233,16 @@
         margin-top: 60px;
     }
 
-    &__list {
+    &__menu {
         list-style: none;
         margin-bottom: 30px;
     }
 
-    &__menu-item {
+    &__menu--item {
         margin-bottom: 15px;
     }
 
-    &__menu-link {
+    &__menu--link {
         color: white;
         text-decoration: none;
     }
@@ -255,7 +255,7 @@
         align-items: center;
     }
 
-    &__copyright-item {
+    &__copyright--item {
         margin-bottom: 15px;
     }
 
@@ -313,18 +313,22 @@
             grid-area: article1;
             grid-column: 1;
             grid-row: 2;
+            padding-inline: 30px;
         }
+    
 
         &__article2 {
             grid-area: article2;
             grid-column: 2;
             grid-row: 2;
+            padding-inline: 30px;
         }
 
         &__article3 {
             grid-area: article3;
             grid-column: 3;
             grid-row: 2;
+            padding-inline: 30px;
         }
 
         &__article__title {
@@ -336,7 +340,7 @@
             font-size: 1.25rem;
         }
 
-        &__button-container {
+        &__button--container {
             margin-top: 40px;
             grid-area: button;
             grid-column: 1 / 4;
@@ -440,33 +444,33 @@
             grid-area: article1;
             grid-column: 1;
             grid-row: 2;
-            width: 75%;
-            margin-left: 50px;
-
+            padding-inline: 28px;
         }
 
         &__article2 {
             grid-area: article2;
             grid-column: 2;
             grid-row: 2;
+            padding-inline: 28px;
         }
 
         &__article3 {
             grid-area: article3;
             grid-column: 3;
             grid-row: 2;
+            padding-inline: 28px;
         }
 
-        &__article__title {
+        &__article--title {
             font-family: Roboto Slab, serif;
             font-size: 1.5rem;
         }
 
-        &__article__paragraph {
+        &__article--paragraph {
             font-size: 1.25rem;
         }
 
-        &__button-container {
+        &__button--container {
             margin-top: 40px;
             grid-area: button;
             grid-column: 1 / 4;
@@ -483,16 +487,16 @@
         flex-direction: row-reverse;
         align-items: first baseline;
 
-        &__list {
-            text-align: left;
-        }
-
         &__nav {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
             margin-top: 60px;
             column-gap: 150px;
+        }
+
+        &__menu {
+            text-align: left;
         }
 
         &__copyright {
