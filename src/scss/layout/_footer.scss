@@ -1,7 +1,7 @@
 .footer {
 
-    color: white;
-    background-color: #304268;
+    color: $color_text_secondary;
+    background-color: $color_footer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +25,7 @@
     }
 
     &__arrow--container {
-        background-color: white;
+        background-color: $color_text_secondary;
         border-radius: 50%;
         border: none;
         cursor: pointer;
@@ -85,7 +85,7 @@
     }
 
     &__menu--link {
-        color: white;
+        color: $color_text_secondary;
         text-decoration: none;
     }
 

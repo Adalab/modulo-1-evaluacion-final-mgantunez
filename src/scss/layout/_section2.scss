@@ -1,5 +1,5 @@
 .section2 {
-    background-color: #eff9ff;
+    background-color: $color_section2;
     text-align: center;
 
     /* Tablet */
@@ -158,7 +158,7 @@
         margin-top: 20px;
         font-size: 1.25rem;
         font-weight: bold;
-        background-color: #f26002;
+        background-color: $color_button_principal;
         border: none;
         border-radius: 20px;
         padding: 10px 25px;
