@@ -125,7 +125,7 @@
         justify-content: center;
         margin-bottom: 60px;
 
-    @include tablet-desktop {
+        @include tablet-desktop {
             margin-top: 40px;
             grid-area: button;
             grid-column: 1 / 4;
@@ -137,7 +137,7 @@
         width: auto;
         display: inline-block;
         color: white;
-        margin-top: 20px;
+        margin-top: 5px;
         font-size: 1.25rem;
         font-weight: bold;
         background-color: $color_button_principal;
@@ -147,7 +147,7 @@
         cursor: pointer;
         transition: 800ms;
 
-     @include desktop {
+        @include desktop {
             padding: 15px 65px;
         }
     }
