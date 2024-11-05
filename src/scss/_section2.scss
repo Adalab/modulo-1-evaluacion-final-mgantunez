@@ -1,0 +1,178 @@
+.section2 {
+    background-color: #eff9ff;
+    text-align: center;
+
+    /* Tablet */
+    @media (min-width: 768px) and (max-width: 1279px) {
+        padding-inline: 20px;
+    }
+
+    /* Desktop*/
+    @media (min-width: 1280px) {
+        padding-inline: 100px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr auto;
+        gap: 30px;
+        line-height: 1.7;
+
+        /* Tablet y desktop */
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "title title title"
+                "article1 article2 article3"
+                "button button button";
+        }
+    }
+
+    &__title {
+        font-family: Roboto Slab, serif;
+        margin-top: 30px;
+        font-size: 1.5rem;
+
+        /* Tablet y desktop */
+        @media (min-width: 768px) {
+            grid-area: title;
+            grid-column: 1 / 4;
+            grid-row: 1;
+            font-family: Roboto Slab, serif;
+            margin-top: 30px;
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1279px) {
+            font-size: 1.625rem;
+        }
+
+        /* Desktop*/
+        @media (min-width: 1280px) {
+            font-size: 2rem;
+        }
+    }
+
+    &__article1 {
+        padding-inline: 80px;
+
+        /* Tablet y desktop */
+        @media (min-width: 768px) {
+            grid-area: article1;
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1279px) {
+            padding-inline: 30px;
+        }
+
+        /* Desktop*/
+        @media (min-width: 1280px) {
+            padding-inline: 28px;
+        }
+    }
+
+    &__article2 {
+        padding-inline: 80px;
+
+        /* Tablet y desktop */
+        @media (min-width: 768px) {
+            grid-area: article2;
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1279px) {
+            padding-inline: 30px;
+        }
+
+        /* Desktop*/
+        @media (min-width: 1280px) {
+            padding-inline: 28px;
+        }
+    }
+
+    &__article3 {
+        padding-inline: 80px;
+
+        /* Tablet y desktop */
+        @media (min-width: 768px) {
+            grid-area: article3;
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1279px) {
+            padding-inline: 30px;
+        }
+
+        /* Desktop*/
+        @media (min-width: 1280px) {
+            padding-inline: 28px;
+        }
+    }
+
+    &__article__title {
+        font-family: Roboto Slab, serif;
+        font-size: 1.125rem;
+
+        /* Tablet y desktop */
+        @media (min-width: 768px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__article__paragraph {
+        font-size: 1.125rem;
+
+        /* Tablet y desktop */
+        @media (min-width: 768px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__button--container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+
+        /* Tablet y desktop*/
+        @media (min-width: 768px) {
+            margin-top: 40px;
+            grid-area: button;
+            grid-column: 1 / 4;
+            grid-row: 3;
+        }
+    }
+
+    &__button {
+        width: auto;
+        display: inline-block;
+        color: white;
+        margin-top: 20px;
+        font-size: 1.25rem;
+        font-weight: bold;
+        background-color: #f26002;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 25px;
+        cursor: pointer;
+        transition: 800ms;
+
+        /* Desktop*/
+        @media (min-width: 1280px) {
+            padding: 15px 65px;
+        }
+    }
+
+    &__button:hover {
+        transform: scale(1.2);
+        background-color: #0271bc;
+    }
+}   
